@@ -12,6 +12,8 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Modifications copyright (C) 2017 Kamil Wiśniowski
  */
 
 import KituraNet
@@ -29,7 +31,7 @@ import KituraTemplateEngine
 ///    `RouterMiddleware` protocol.
 ///   - Routing the request to a template engine to generate the appropriate output.
 ///   - Serving the landing page when someone makes an HTTP request with a path of slash (/).
-public class Router {
+open class Router {
 
     /// Contains the list of routing elements
     var elements: [RouterElement] = []
